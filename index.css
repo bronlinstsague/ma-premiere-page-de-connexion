@@ -1,0 +1,174 @@
+. {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "montserrat", sans-serif;
+    height: 100vh;
+    margin: 20px;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    min-height: 450px;
+    width: 200000pxs;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(red, green, blue, alpha);
+}
+
+.form-container {
+    position: relative;
+    top: 0;
+    height: 100px;
+}
+
+.sing-up-container {
+    left: 0;
+    width: 50%;
+}
+
+.login-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+form {
+    background-color: #f6f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100px;
+    text-align: center;
+}
+
+input {
+    background-color: #adf;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100px;
+}
+
+button.ghost {
+    background-color: transparent;
+}
+
+button {
+    background-color: #adf;
+    color: #00203f;
+    border: 1px solid #adf;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 16px 32px;
+    margin-top: 24px;
+    letter-spacing: 1px;
+    border-color: #00203f;
+    transition: .2s ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #00203f;
+    color: #f6f5f7;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+.social-container {
+    margin: 24px;
+}
+
+.social-container a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #adf;
+    border: 1px solid #00203f;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+span {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    margin: 8px 0 16px;
+    color: #333;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.overlay {
+    background: linear-gradient(to right, #adf0d1, #e7f0fd);
+    background: #adf0d1;
+    color: #00203f;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    transform: translateX(0);
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    margin: 20px 0 30px;
+}
