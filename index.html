@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.">
+
 </head>
 
 <body>
@@ -15,22 +16,23 @@
             <form action="#">
                 <h1>creer un compte</h1>
                 <div class="social-container">
-                    <a href="#"><I class="fab fa-facebook-f"></I></a>
-                    <a href="#"><I class="fab fa-google-plus-g"></I></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><Ion-icon name="fab fa-google-plus-g"></Ion-icon></a>
                     <a href="#"><I class="fab fa-linkedin-in"></I></a>
                 </div>
-                <span>utiliser un compte gmail</span>
+                <span>utiliser un compte gmail et un numero de telephone</span>
                 <input type="text" placeholder="nom">
                 <input type="email" placeholder="emaii">
+                <input type="numero" placeholder="numero de telephone">
                 <input type="password" placeholder="mot de passe">
                 <button>creer le compte</button>
             </form>
         </div>
-        <div class="form-container login-container">
+        <div class="active login-container">
             <form action="#">
                 <h1>se connecter</h1>
                 <div class="social-container">
-                    <a href="#"><I class="fab fa-facebook-f"></I></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
                     <a href="#"><I class="fab fa-google-plus-g"></I></a>
                     <a href="#"><I class="fab fa-linkedin-in"></I></a>
                 </div>
@@ -40,6 +42,7 @@
                 <button>se connecter</button>
             </form>
         </div>
+        <!-- 
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
@@ -61,8 +64,11 @@
                     <button class="ghost" id="sign-up">creer un compte</button>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="/index.js" charset="utf-8"></script>
 </body>
 
